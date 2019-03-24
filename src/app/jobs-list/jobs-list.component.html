@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-8">
+    <div class="jobs-list-container">
+      <ul class="list-group" *ngFor="let job of activeJobsList">
+        <li class="ellipsis list-group-item list-group-item-action" [ngClass]="{'active' : previewedJob == job}" (click)="previewJob(job)" title="{{job.title}}">{{job.title}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="preview-container">
+      <div *ngIf="chosenJob">
+        <app-job-preview [jobItem]="chosenJob"></app-job-preview>
+      </div>
+    </div>
+  </div>
+</div>
