@@ -1,8 +1,11 @@
 <div class="row">
   <div class="col-8">
     <div class="jobs-list-container">
-      <ul class="list-group" *ngFor="let job of activeJobsList">
-        <li class="ellipsis list-group-item list-group-item-action" [ngClass]="{'active' : previewedJob == job}" (click)="previewJob(job)" title="{{job.title}}">{{job.title}}</li>
+      <ul class="list-group" >
+        <li *ngFor="let job of activeJobsList" class="ellipsis list-group-item list-group-item-action" [ngClass]="{'active' : previewedJob == job}"
+            (click)="previewJob(job)" title="{{job.title}}, {{job.city}}, {{job.zip_code}}">{{job.title}}, {{job.city}},
+          {{job.zip_code}}
+        </li>
       </ul>
     </div>
   </div>
