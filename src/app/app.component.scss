@@ -1,4 +1,7 @@
 @import '../app/jobs-list/jobs-list.component';
 @import '../app/job-preview/job-preview.component';
 
-
+.jobs-list-container {
+  max-width: 900px;
+  margin: 0 auto;
+}

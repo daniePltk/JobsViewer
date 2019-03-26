@@ -1,6 +1,16 @@
 # JobsViewer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+This is a coding exercise written in Angular 7.3.0.
+
+In this exercise you will find a simple frontend application fetching some mock data in Json format and displaying more details once clicked on specific data object.
+
+The purpose of the exercise is to evaluate Structure, Components Encapsulation and Unit Testing.
+
+## Dependencies
+
+This application uses Bootstrap 4.0 for UI and Responsive Layout.
+
+This application uses Karma - Jasmine for Unit Testing.
 
 ## Development server
 

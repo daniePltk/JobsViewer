@@ -38,7 +38,7 @@ describe('JobsListComponent', () => {
     expect(list).toBeTruthy();
   }));
 
-  it('Job item when clicked should be activated on click', async(() => {
+  it('Job item in List of jobs when clicked should be activated', async(() => {
     fixture.detectChanges();
     const job = fixture.debugElement.nativeElement.querySelector('.list-group li:first-child');
     expect(job.classList.contains('active'));

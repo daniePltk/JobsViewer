@@ -21,7 +21,7 @@ describe('JobPreviewComponent', () => {
     }).compileComponents();
   }));
 
-  beforeEach( async(() => {
+  beforeEach(async(() => {
     fixture = TestBed.createComponent(JobPreviewComponent);
     fix = TestBed.createComponent(JobsListComponent);
     component = fixture.componentInstance;
@@ -29,16 +29,16 @@ describe('JobPreviewComponent', () => {
     fix.detectChanges();
   }));
 
-  it('should create a Preview', async( () => {
+  it('should create a Preview container', async(() => {
     fix.detectChanges();
     const job = fix.debugElement.nativeElement.querySelector('.list-group li:first-child');
     job.click();
     fix.detectChanges();
-    const previewContainer = fix.debugElement.nativeElement.querySelector('.preview-container app-job-preview')
+    const previewContainer = fix.debugElement.nativeElement.querySelector('.preview-container app-job-preview');
     expect(previewContainer).toBeTruthy();
   }));
 
-  it('should contain a Preview container with image and description', async( () => {
+  it('should contain a Preview container with image and description for the first child in list in comparison to mock fixture', async(() => {
     fix.detectChanges();
     const job = fix.debugElement.nativeElement.querySelector('.list-group li:first-child');
     job.click();

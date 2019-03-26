@@ -41,6 +41,5 @@ export class JobsListComponent implements OnInit {
   previewJob(job: JobModel) {
     this.previewedJob = job;
     this.chosenJob = Object.assign({}, job);
-
   }
 }
